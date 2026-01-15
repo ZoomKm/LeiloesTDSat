@@ -18,7 +18,7 @@ public class conectaDAO {
 
     private final String URL = "jdbc:mysql://localhost:3306/leiloes?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true";
     private final String USER = "root";
-    private final String PASSWORD = "JFK2020/pmw";
+    private final String PASSWORD = "";
 
     /**
      * Estabelece uma conexão com a base de dados MySQL. O método carrega o
