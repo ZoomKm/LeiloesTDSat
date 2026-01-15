@@ -27,6 +27,10 @@ SET time_zone = "+00:00";
 -- Estrutura da tabela `produtos`
 --
 
+DROP DATABASE IF EXISTS leiloes;
+CREATE DATABASE leiloes;
+USE leiloes;
+
 CREATE TABLE `produtos` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `nome` text DEFAULT NULL,
