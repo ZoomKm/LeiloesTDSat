@@ -18,15 +18,13 @@ public class conectaDAO {
 
     private final String URL = "jdbc:mysql://localhost:3306/leiloes?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true";
     private final String USER = "root";
-    private final String PASSWORD = "";
+    private final String PASSWORD = "JFK2020/pmw";
 
     /**
-     * Estabelece uma conexão com a base de dados MySQL. O método carrega o
-     * driver JDBC, tenta estabelecer a ligação utilizando as credenciais
-     * configuradas e inicializa o objeto Statement.
+     * Estabelece uma conexão com a base de dados MySQL. 
+     * O método carrega o driver JDBC, tenta estabelecer a ligação utilizando as credenciais configuradas.
      *
-     * @return Connection O objeto de conexão estabelecida, ou o estado atualda
-     * variável 'conn' em caso de erro.
+     * @return Connection O objeto de conexão estabelecida, ou o estado atualda variável 'conn' em caso de erro.
      */
     public Connection connectDB() {
 
