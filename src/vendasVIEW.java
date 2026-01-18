@@ -103,24 +103,24 @@ public class vendasVIEW extends javax.swing.JFrame {
 
     
     private void listarVendidos() {
-    try {
-        ProdutosDAO produtosdao = new ProdutosDAO();
+        try {
+            ProdutosDAO produtosdao = new ProdutosDAO();
 
-        DefaultTableModel model = (DefaultTableModel) produtosVendidos.getModel();
-        model.setNumRows(0);
+            DefaultTableModel model = (DefaultTableModel) produtosVendidos.getModel();
+            model.setNumRows(0);
 
-        ArrayList<ProdutosDTO> listagem = produtosdao.listarProdutosVendidos();
-        
-        for (int i = 0; i < listagem.size(); i++) {
-            model.addRow(new Object[]{
-                listagem.get(i).getId(),
-                listagem.get(i).getNome(),
-                listagem.get(i).getValor(),
-                listagem.get(i).getStatus()
-            });
-        }
-    } catch (Exception e) {
-        javax.swing.JOptionPane.showMessageDialog(null, "Erro ao carregar tabela de vendas: " + e.getMessage());
+            ArrayList<ProdutosDTO> listagem = produtosdao.listarProdutosVendidos();
+
+            for (int i = 0; i < listagem.size(); i++) {
+                model.addRow(new Object[]{
+                    listagem.get(i).getId(),
+                    listagem.get(i).getNome(),
+                    listagem.get(i).getValor(),
+                    listagem.get(i).getStatus()
+                });
+            }
+        } catch (Exception e) {
+            javax.swing.JOptionPane.showMessageDialog(null, "Erro ao carregar tabela de vendas: " + e.getMessage());
     }
 }
     
