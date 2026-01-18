@@ -21,12 +21,10 @@ public class conectaDAO {
     private final String PASSWORD = "";
 
     /**
-     * Estabelece uma conexão com a base de dados MySQL. O método carrega o
-     * driver JDBC, tenta estabelecer a ligação utilizando as credenciais
-     * configuradas e inicializa o objeto Statement.
+     * Estabelece uma conexão com a base de dados MySQL. 
+     * O método carrega o driver JDBC, tenta estabelecer a ligação utilizando as credenciais configuradas.
      *
-     * @return Connection O objeto de conexão estabelecida, ou o estado atualda
-     * variável 'conn' em caso de erro.
+     * @return Connection O objeto de conexão estabelecida, ou o estado atualda variável 'conn' em caso de erro.
      */
     public Connection connectDB() {
 
